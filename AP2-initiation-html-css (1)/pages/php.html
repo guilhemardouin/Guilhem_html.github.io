@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/Global.css" />
+    <title>COURS SIO WEB | PHP</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">Logo</div>
+        <div class="menu" id="menu">
+          <a href="../index.html">Accueil</a>
+          <a href="html.html">HTML</a>
+          <a href="css.html">CSS</a>
+          <a href="javascript.html">JavaScript</a>
+          <a href="php.html">PHP</a>
+          <a href="kotlin.html">Kotlin</a>
+          <a href="python.html">Python</a>
+          <a href="sql.html">SQL</a>
+          <a href="angular.html">Angular</a>
+          <a href="git.html">Git</a>
+          <a href="github.html">GitHub</a>
+          <a href="linux.html">Linux</a>
+          <a href="linux_command_line.html">Ligne de commande Linux</a>
+        </div>
+        <div class="burger" id="burger" aria-label="Menu" aria-expanded="false" role="button" tabindex="0">
+          <div></div><div></div><div></div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <h1>Introduction à PHP</h1>
+      <p>
+        Créé par Rasmus Lerdorf en 1994, PHP (Hypertext Preprocessor) est un langage de script open-source spécialement conçu pour le développement d'applications web s'exécutant côté serveur.
+      </p>
+      <p>
+        Lorsqu'un utilisateur demande une page PHP, le serveur exécute le code PHP, génère du HTML dynamique, puis renvoie uniquement le résultat HTML au navigateur de l'utilisateur.
+      </p>
+
+      <section>
+        <h2>Fonctionnalités Majeures</h2>
+        <ul>
+          <li><strong>Dynamisme :</strong> Génère des pages personnalisées à la volée.</li>
+          <li><strong>Bases de données :</strong> S'intègre nativement et efficacement avec les systèmes comme MySQL ou PostgreSQL.</li>
+          <li><strong>Traitement de formulaires :</strong> Récupère les données envoyées en méthode POST ou GET pour les sécuriser et les traiter.</li>
+        </ul>
+
+        <h2>Exemple de code PHP</h2>
+        <pre><code>&lt;?php
+// Exemple de traitement de variable et d'affichage dynamique
+$nomUtilisateur = "Étudiant SIO";
+echo "&lt;h2&gt;Bienvenue, " . htmlspecialchars($nomUtilisateur) . " !&lt;/h2&gt;";
+
+// Structure conditionnelle simple
+if (date("H") < 18) {
+    echo "&lt;p&gt;Passez une excellente journée d'apprentissage.&lt;/p&gt;";
+} else {
+    echo "&lt;p&gt;Bonsoir !&lt;/p&gt;";
+}
+?&gt;</code></pre>
+      </section>
+
+      <section>
+        <h2>Ressources supplémentaires</h2>
+        <ul>
+          <li><a href="https://php.net">Site Officiel PHP</a></li>
+          <li><a href="https://w3schools.com">Tutoriel W3Schools PHP</a></li>
+        </ul>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2023 COURS SIO WEB LDV Melun. Tous droits réservés.</p>
+    </footer>
+    <script src="../js/script.js"></script>
+  </body>
+</html>
